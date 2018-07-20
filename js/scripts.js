@@ -17,13 +17,13 @@ Turn.prototype.diceRoller = function(player1, player2) {
   this.total += randNumber;
 
   if (randNumber == 1) {
-      this.total = 0;
-      this.endTurn(player1, player2);
-      // this.randNumber += randNumber;
-      return randNumber;
+    this.total = 0;
+    this.endTurn(player1, player2);
+    // this.randNumber += randNumber;
+    return randNumber;
   } else {
-      this.randNumber += randNumber;
-      return randNumber;
+    this.randNumber += randNumber;
+    return randNumber;
   };
 };
 
@@ -34,13 +34,13 @@ Turn.prototype.endTurn = function(player1, player2) {
   this.total = 0;
   this.randNumber = 0;
   if (this.player == player1) {
-      this.player = player2;
-      $("#player2").toggleClass("active");
-      $("#player1").toggleClass("active");
+    this.player = player2;
+    $("#player2").toggleClass("active");
+    $("#player1").toggleClass("active");
   } else if (this.player == player2) {
-      this.player = player1;
-      $("#player2").toggleClass("active");
-      $("#player1").toggleClass("active");
+    this.player = player1;
+    $("#player2").toggleClass("active");
+    $("#player1").toggleClass("active");
   };
 };
 
@@ -85,11 +85,11 @@ $(document).ready(function() {
     //Determines the winner and prints player score to page
     if ((currentTurn.total + currentTurn.player.score) >= 100) {
       if (currentTurn.player == player1) {
-          $('#player1-score').text(currentTurn.total + currentTurn.player.score);
-          alert("You are the winner!");
+        $('#player1-score').text(currentTurn.total + currentTurn.player.score);
+        alert("You are the winner!");
       } else if (currentTurn.player == player2) {
-          $('#player2-score').text(currentTurn.total + currentTurn.player.score)
-          alert("You are the winner!");
+        $('#player2-score').text(currentTurn.total + currentTurn.player.score)
+        alert("You are the winner!");
       };
     };
   });

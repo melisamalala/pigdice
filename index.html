@@ -4,7 +4,8 @@
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Gaegu' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
 
   <title>Pig Dice</title>
 </head>
@@ -21,8 +22,10 @@
     </div>
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1 text-center">
-        <p>
-          Hello! Welcome to a game of Pig Dice. The aim is to score 100 points before your competitor does. This game is played with a single six-sided die. Keep on rolling the die until you are happy with the number of points you have scored, and hold your score to accumulate points. The first player to reach a higher score closer to 100 wins! Please note, however, that if you roll "1", you will lose all the points you have accumulated during your turn, and you lose your turn. Ready player one? Let the games begin!
+        <p id="fontchange">
+          Hello! Welcome to a game of Pig Dice. <br>The aim is to score 100 points before your competitor does. <br>This game is played with a single six-sided die. <br> Keep on rolling the die until you are happy with the number of points you have scored,
+          and hold your score to accumulate points.<br>The first player to reach a higher score closer to 100 wins! <br>Please note, however, that if you roll "1", you will lose all the points you have accumulated during your turn, and you lose your turn.
+          <br>Ready player one?<br> Let the games begin!
         </p>
       </div>
     </div>
@@ -30,29 +33,29 @@
 
     <div class="row" id="players">
       <div class="col-xs-4 col-xs-offset-2 active text-center" id="player1">
-      <h3><span class="player">Player 1</span> <br><br>Score: <span id="player1-score"></span></h3>
+        <h3><span class="player">Player 1</span> <br><br>Score: <span id="player1-score"></span></h3>
       </div>
       <br>
       <br>
-      <div class="col-xs-4 activeopposite text-center" id="player2">
-      <h3><span class="player">Player 2</span> <br><br>Score: <span id="player2-score"></span></h3>
+      <div class="col-xs-4 text-center" id="player2">
+        <h3><span class="player">Player 2</span> <br><br>Score: <span id="player2-score"></span></h3>
       </div>
     </div>
     </br>
-  </br>
+    </br>
 
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1 text-center">
-          <h3>Turn Total: <span id="roll-total"></span></h3>
-          <h3>Current Roll: <span id="roll"></span></h3>
-          </br>
-        </div>
+        <h3>Turn Total: <span id="roll-total"></span></h3>
+        <h3>Current Roll: <span id="roll"></span></h3>
+        </br>
+      </div>
     </div>
 
     <div class="row">
       <div class="col-xs-3 col-xs-offset-3">
         <form id="roll">
-            <button type="submit" class="btn btn-default btn-lg">Roll Your Dice Here!</button>
+          <button type="submit" class="btn btn-default btn-lg">Roll Your Dice Here!</button>
         </form>
       </div>
       <div class="col-xs-3 ">
@@ -61,15 +64,26 @@
         </form>
       </div>
     </div>
+  </div>
 
-    <!-- JAVASCRIPT -->
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+  <div class="jumbotron" id=footer>
+    <div class="containerfooter">
+      <div class="row text-align-center">
+        <div class="text-center">
+          <h2 id="follow">Thanks for playing!<br> 2018 Melissa Malala</h2>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- END OF JAVASCRIPT -->
+  <!-- JAVASCRIPT -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
+  <!-- END OF JAVASCRIPT -->
 </body>
 
 </html>
