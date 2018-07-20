@@ -1,0 +1,128 @@
+h1 {
+  text-align: center;
+  font-family: 'Walter Turncoat', cursive;
+  padding: 0;
+  padding-left: 30px;
+  padding-top: 15px;
+  margin: 0;
+  line-height: 0.8;
+}
+
+h1#top {
+  color: #black;
+  /* color: #FF99BB;
+  color: #FF6699; */
+  font-size: 7em;
+  text-align: center;
+
+}
+
+.title {
+  padding: 0;
+  text-align: center;
+}
+
+
+h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h5 {
+  text-align: center;
+  font-size: 1.8em;
+
+}
+
+.active {
+  border: 4px solid black;
+  border-radius: 5px;
+  margin-left: 60px;
+}
+
+.active h3 .player {
+    font-size: 1.2em;
+}
+
+.active h3 {
+    color: #DC143C;
+
+}
+/*
+.activeopposite{
+  border: 4px solid black;
+  border-radius: 5px;
+  margin-left: 60px;
+}
+.activeopposite h3{
+  color: blue;
+} */
+
+.player {
+    /*color: ##FF6699;*/
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+h3 {
+  font-family: 'Walter Turncoat', cursive;
+
+}
+
+p {
+    margin-top: 25px;
+}
+
+#players {
+  text-align: center;
+  margin: auto;
+}
+
+.container {
+  background: #fff;
+  background: rgba(255,255,255, 0.99);
+  border: 20px solid black;
+  border-radius: 50px;
+  width: 700px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-bottom: 50px;
+
+}
+
+body {
+    /* background-image: url(..img/pigsduh.jpg); */
+    background: #DC143C;
+    /*border: 10px solid #FF6699;*/
+    color: #333;
+    height: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.btn {
+  /*margin-right: 20px;*/
+  /*border-width: 2px !important;*/
+  padding: 10px 25px;
+}
+
+#roll .btn {
+    color: #fff;
+    background: #DC143C;
+    border: black;
+    margin-left: 15px;
+}
+
+#end-turn .btn {
+    color: #fff;
+    background: black;
+    border: #FF99BB;
+    margin-left: 15px;
+}
