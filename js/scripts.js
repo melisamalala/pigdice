@@ -1,3 +1,4 @@
+// BUSINESS LOGIC
 //Creates a player and sets initial score to 0
 function Player(userName) {
   this.userName = userName;
@@ -94,6 +95,8 @@ $(document).ready(function() {
     };
   });
 
+
+  // USER LOGIC
   //This code runs when you click the End Turn button
   $("form#end-turn").submit(function(event) {
     event.preventDefault();
