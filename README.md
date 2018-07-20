@@ -5,6 +5,8 @@ Pig Dice.
 
 This is my fourth project at Moringa School Prep, and the aim is to create a Pig Dice game that will allow 2 players to roll dice. The rules of the game are as follows. On each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold" their score and pass over the next turn to the other plater.
 
+You can find the web app here: https://melisamalala.github.io/pigdice/
+
 Contents:
 
 If the player rolls a 1, they score nothing and it becomes the next player's turn. If the player rolls any other number, it is added to their turn total and the player's turn continues. If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn. The first player to score 100 or more points wins.
