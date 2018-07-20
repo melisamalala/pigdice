@@ -36,7 +36,7 @@ h5 {
 }
 
 .active {
-  border: 4px solid black;
+  border: 4px solid #FFC0CB;
   border-radius: 5px;
   margin-left: 60px;
 }
@@ -46,7 +46,7 @@ h5 {
 }
 
 .active h3 {
-  color: #DC143C;
+  color: black;
 }
 
 /*
@@ -81,7 +81,7 @@ p {
 .container {
   background: #fff;
   background: rgba(255, 255, 255, 0.99);
-  border: 20px solid black;
+  border: 20px solid #FFC0CB;
   border-radius: 50px;
   width: 700px;
   margin: auto;
@@ -93,7 +93,9 @@ p {
 }
 
 #footer {
-  background: #DC143C;
+  background: #FFC0CB;
+  background-image: url(..img/depositphotos_126657136-stock-illustration-pig-face-wallpaper.jpg);
+  background-size: 25%;
 }
 
 .containerfooter {
@@ -118,14 +120,15 @@ h2#follow {
 
 body {
   /* background-image: url(..img/pigsduh.jpg); */
-  background: #DC143C;
+  background: #FFC0CB;
   /*border: 10px solid #FF6699;*/
   color: #333;
   height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: 25%;
+  background-image: url(../img/depositphotos_126657136-stock-illustration-pig-face-wallpaper.jpg)
 }
 
 .btn {
@@ -136,7 +139,7 @@ body {
 
 #roll .btn {
   color: #fff;
-  background: #DC143C;
+  background: #FFC0CB;
   border: black;
   margin-left: 15px;
   font-family: 'Quicksand', cursive;
