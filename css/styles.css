@@ -132,9 +132,9 @@ body {
 }
 
 .btn {
-  /*margin-right: 20px;*/
-  /*border-width: 2px !important;*/
   padding: 10px 25px;
+  opacity: 1;
+  transition: 0.3s;
 }
 
 #roll .btn {
@@ -151,6 +151,10 @@ body {
   border: #FF99BB;
   margin-left: 15px;
   font-family: 'Quicksand', cursive;
+}
+
+.btn:hover {
+  opacity: 0.6;
 }
 
 .fa:hover {
